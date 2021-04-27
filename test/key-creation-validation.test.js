@@ -31,26 +31,3 @@ test('createKeyFiles encrypts and decrypts as expected', () => {
     
     expect(actual).toBe(message);
 })
-
-
-
-// const readFiles = (testMessage) => {
-//     console.log(testMessage);
-//     const shard2 = fs.readFileSync('Shard2.TXT');
-//     const shard5 = fs.readFileSync('Shard5.TXT');
-//     const public = fs.readFileSync('Public.TXT');
-//     const combinedShards = sss.combine([shard2, shard5]);
-
-//     const publicKey = new rsa();
-//     const privateKey = new rsa();
-
-//     publicKey.importKey(public);
-//     privateKey.importKey(combinedShards.toString());
-
-//     const encryptedByPublic = publicKey.encrypt(testMessage, "base64");
-//     const actual = privateKey.decrypt(encryptedByPublic, "utf8");
-
-//     console.log(actual);
-// }
-
-// readFiles('Trayson is the best');
