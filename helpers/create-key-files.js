@@ -5,6 +5,12 @@ const sss = require('shamirs-secret-sharing');
 const fs = require('fs');
 const chalk = require("chalk");
 
+/**
+ * 
+ * @param {number} shardCount
+ * 
+ * Generates the public key and private key shards and writes them to the TXT files
+ */
 const createKeyFiles = (shardCount) => {
     const { publicKey, privateKey } = generateKeys();
 
